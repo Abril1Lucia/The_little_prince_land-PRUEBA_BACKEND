@@ -1,0 +1,41 @@
+{
+  "name": "entrega-final",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abril1Lucia/Entrega_uno.git"
+  },
+  "author": "Abril Lucia Castellanos Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abril1Lucia/Entrega_uno/issues"
+  },
+  "homepage": "https://github.com/Abril1Lucia/Entrega_uno#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.9.5",
+    "ngx-toastr": "^19.0.0",
+    "nodemon": "^3.1.9"
+  },
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
