@@ -4,6 +4,7 @@ import supertest from "supertest";
 import mongoose from "mongoose";
 
 
+//prueba de controladores
 describe('probar controladores de usuarios :)',()=>{
 
     beforeEach(async()=>{
@@ -13,6 +14,7 @@ describe('probar controladores de usuarios :)',()=>{
     afterAll(async()=>{
         await mongoose.connection.close()
     })
+
 
     const testUser = {
         image: 'un random',

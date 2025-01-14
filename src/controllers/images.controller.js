@@ -32,7 +32,6 @@ export const postimage = async (request, response) => {
 //peticion del get para mostrarlos
 export const getimage = async (request, response) => {
   //logica de la peticion we
-  // return Response.json ({'Mensaje': 'MIRA WE, SIN MANOS'})
 
   try {
     let images = await imageModel.find();
@@ -64,7 +63,7 @@ export const getimage = async (request, response) => {
 //peticion del put para actualizarlos we
 export const putimageById = async (request, response) => {
   //logica de la peticion put we
-  // return response.json ({'Mensaje': 'ESTO ES COMPLICADO WE'})
+
 
   try {
     let idForput = request.params.id;
@@ -103,7 +102,7 @@ export const putimageById = async (request, response) => {
 
 export const DeleteimageById = async (request, response) => {
   //logica de la peticion put we
-//   return response.json({ Mensaje: "NAH MENTIRA :)" });
+
 
 try {
 
