@@ -31,9 +31,6 @@ describe('probar controladores de imagenes :D',()=>{
             expect(res.statusCode).toBe(201)
         })
 
-        //segundo caso de prueba
-        //test de error si falta un campo :)
-
         it('error', async()=>{ 
             const res = await supertest(app).post('/Admin/crear').send({email:testAdmin.email})
 

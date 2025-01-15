@@ -36,8 +36,7 @@ describe('probar controladores de imagenes :D',()=>{
             expect(res.statusCode).toBe(201)
         })
 
-        //segundo caso de prueba
-        //test de error si falta un campo :)
+        //test de error 
 
         it('error si falta un campo', async()=>{ 
             const res = await supertest(app).post('/imagenes/crear').send({email:testImage.name})
@@ -72,7 +71,7 @@ describe('probar controladores de imagenes :D',()=>{
 
 
 
-
+ //test del PUT
      
 
     describe('PUT',()=>{
