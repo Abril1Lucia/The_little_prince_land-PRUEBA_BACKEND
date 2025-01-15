@@ -48,8 +48,8 @@ describe('probar controladores de usuarios :)',()=>{
         it('mostrar que no hay users', async()=>{ 
             const res = await supertest(app).get('/usuarios/obtener')
 
-            expect(res.statusCode).toBe(401)
-            expect(res.body).toHaveProperty('mensaje','no hay token, no tienes permiso para pasar, devuelvete o te doy chancla 🩴')
+            expect(res.statusCode).toBe(200)
+            expect(res.body).toHaveProperty('mensaje','tas solito we ;-;')
         })
 
     })

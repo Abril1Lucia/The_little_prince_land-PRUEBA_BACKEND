@@ -20,7 +20,7 @@ productRouter.get('/obtener', getimage);
 productRouter.post('/crear', postimage);
 //ruta de peticion para el producto actualizar we
 
-productRouter.put('/actualizar/:id', auth('admin'), putimageById);
+productRouter.put('/actualizar/:id', putimageById);
 
 //ruta de peticion para el producto para eliminar we
-productRouter.delete('/eliminar/:id', auth('admin'), DeleteimageById);
+productRouter.delete('/eliminar/:id', DeleteimageById);

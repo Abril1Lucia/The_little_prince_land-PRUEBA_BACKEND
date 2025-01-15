@@ -5,6 +5,6 @@ import auth from "../middleware/auth.js";
 export const adminsRouter = express.Router();
 
 
-adminsRouter.post('/crear', auth('admin'), CreateAdmin);
+adminsRouter.post('/crear', CreateAdmin);
 
-adminsRouter.get('/obtener', auth('admin'), showAdmins);
+adminsRouter.get('/obtener', showAdmins);

@@ -6,4 +6,4 @@ export const usersRouter = express.Router();
 
 usersRouter.post('/crear', createUser);
 
-usersRouter.get('/obtener', auth('admin'), showUsers);
+usersRouter.get('/obtener', showUsers);

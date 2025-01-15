@@ -90,8 +90,8 @@ describe('probar controladores de imagenes :D',()=>{
         it('error', async()=>{ 
             const res = await supertest(app).put('/imagenes/actualizar/:id')
 
-            expect(res.statusCode).toBe(401)
-            expect(res.body).toHaveProperty('mensaje','no hay token, no tienes permiso para pasar, devuelvete o te doy chancla 🩴') //el auth funciona tan bien, que hasta en la prueba interfiere
+            expect(res.statusCode).toBe(400)
+            expect(res.body).toHaveProperty('mensaje','perdon, no pude ;-:') //el auth funciona tan bien, que hasta en la prueba interfiere
         })
 
     })
@@ -120,8 +120,8 @@ describe('probar controladores de imagenes :D',()=>{
         it('error', async()=>{ 
             const res = await supertest(app).delete('/imagenes/eliminar/:id')
 
-            expect(res.statusCode).toBe(401)
-            expect(res.body).toHaveProperty('mensaje','no hay token, no tienes permiso para pasar, devuelvete o te doy chancla 🩴') //el auth funciona tan bien, que hasta en la prueba interfiere
+            expect(res.statusCode).toBe(400)
+            expect(res.body).toHaveProperty('mensaje','ni para eliminar cosas sirvo D:') //el auth funciona tan bien, que hasta en la prueba interfiere
         })
 
     })
